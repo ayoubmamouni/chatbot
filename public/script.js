@@ -11,8 +11,6 @@ function sendMessage() {
         //     appendMessage("I'm just a demo bot. Replace this with Gemini API response!", 'bot');
         // }, 500);
 
-        // Uncomment below to use Gemini API
-        
         fetch('/chat', {
             method: 'POST',
             headers: {
@@ -29,6 +27,7 @@ function sendMessage() {
         });
     }
 }
+
 
 function appendMessage(message, sender) {
     const chatBox = document.getElementById('chat-box');
